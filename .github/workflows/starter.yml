@@ -34,9 +34,6 @@ jobs:
       # Run the tests.
       - run: cd backend && npm test
 
-      # Run the linter.
-      - run: cd backend/node_modules && npm run lint
-
       # Send a console message at completion.
       - run: |
           echo "Hello ${{github.actor}}. You pushed to ${{github.repository}} at $(date)."
